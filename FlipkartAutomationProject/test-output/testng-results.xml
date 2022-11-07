@@ -1,25 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-01T22:10:05 IST" name="Suite" finished-at="2022-11-01T22:11:56 IST" duration-ms="110648">
+  <suite started-at="2022-11-07T00:24:00 IST" name="Suite" finished-at="2022-11-07T00:29:11 IST" duration-ms="310990">
     <groups>
     </groups>
-    <test started-at="2022-11-01T22:10:05 IST" name="Test" finished-at="2022-11-01T22:11:56 IST" duration-ms="110648">
-      <class name="BrowserOpen.HitBrowser">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:BrowserOpen.HitBrowser@353d0772]" started-at="2022-11-01T22:10:05 IST" name="beforeClass" finished-at="2022-11-01T22:10:30 IST" duration-ms="25400" status="PASS">
+    <test started-at="2022-11-07T00:24:00 IST" name="Test1" finished-at="2022-11-07T00:25:31 IST" duration-ms="90903">
+      <class name="BrowserOpen.GoogleChromeTestCases">
+        <test-method is-config="true" signature="LaunchappChrome()[pri:0, instance:BrowserOpen.GoogleChromeTestCases@1139b2f3]" started-at="2022-11-07T00:24:00 IST" name="LaunchappChrome" finished-at="2022-11-07T00:25:26 IST" duration-ms="86063" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="f()[pri:0, instance:BrowserOpen.HitBrowser@353d0772]" started-at="2022-11-01T22:10:30 IST" name="f" finished-at="2022-11-01T22:11:45 IST" duration-ms="74320" status="PASS">
+        </test-method> <!-- LaunchappChrome -->
+        <test-method signature="f()[pri:0, instance:BrowserOpen.GoogleChromeTestCases@1139b2f3]" started-at="2022-11-07T00:25:26 IST" name="f" finished-at="2022-11-07T00:25:26 IST" duration-ms="65" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:BrowserOpen.HitBrowser@353d0772]" started-at="2022-11-01T22:11:45 IST" name="afterClass" finished-at="2022-11-01T22:11:56 IST" duration-ms="10483" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:BrowserOpen.GoogleChromeTestCases@1139b2f3]" started-at="2022-11-07T00:25:26 IST" name="afterClass" finished-at="2022-11-07T00:25:31 IST" duration-ms="4626" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- BrowserOpen.GoogleChromeTestCases -->
+    </test> <!-- Test1 -->
+    <test started-at="2022-11-07T00:24:00 IST" name="Test2" finished-at="2022-11-07T00:29:11 IST" duration-ms="310990">
+      <class name="BrowserOpen.HitBrowser">
+        <test-method is-config="true" signature="Launchapp()[pri:0, instance:BrowserOpen.HitBrowser@384ad17b]" started-at="2022-11-07T00:24:00 IST" name="Launchapp" finished-at="2022-11-07T00:28:57 IST" duration-ms="296964" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Launchapp -->
+        <test-method signature="f()[pri:0, instance:BrowserOpen.HitBrowser@384ad17b]" started-at="2022-11-07T00:28:57 IST" name="f" finished-at="2022-11-07T00:28:57 IST" duration-ms="74" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:BrowserOpen.HitBrowser@384ad17b]" started-at="2022-11-07T00:28:57 IST" name="afterClass" finished-at="2022-11-07T00:29:11 IST" duration-ms="13915" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- BrowserOpen.HitBrowser -->
-    </test> <!-- Test -->
+    </test> <!-- Test2 -->
   </suite> <!-- Suite -->
 </testng-results>
