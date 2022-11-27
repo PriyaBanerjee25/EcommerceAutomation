@@ -24,7 +24,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class HitBrowser {
+public class HitBrowser{
 
 	public static WebDriver driver;
 	String search = "//input[@name='q']";

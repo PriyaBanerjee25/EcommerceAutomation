@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="FirefoxLoginSearchATC.SelectItemMenub">
+      <class name="FirefoxLoginSearchATC.LoginTest">
         <methods>
-          <include name="close"/>
-          <include name="URLHandle"/>
-          <include name="completeproductlistdetails"/>
+          <include name="Login"/>
+          <include name="afterClass"/>
+          <include name="MenuList"/>
         </methods>
-      </class> <!-- FirefoxLoginSearchATC.SelectItemMenub -->
+      </class> <!-- FirefoxLoginSearchATC.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

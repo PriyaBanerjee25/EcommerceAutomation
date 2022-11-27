@@ -2,28 +2,28 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-18T00:31:34 IST" name="Default suite" finished-at="2022-11-18T00:33:49 IST" duration-ms="135157">
+  <suite started-at="2022-11-25T18:07:12 IST" name="Default suite" finished-at="2022-11-25T18:14:06 IST" duration-ms="413445">
     <groups>
     </groups>
-    <test started-at="2022-11-18T00:31:34 IST" name="Default test" finished-at="2022-11-18T00:33:49 IST" duration-ms="135157">
-      <class name="FirefoxLoginSearchATC.SelectItemMenub">
-        <test-method is-config="true" signature="URLHandle()[pri:0, instance:FirefoxLoginSearchATC.SelectItemMenub@3d74bf60]" started-at="2022-11-18T00:31:34 IST" name="URLHandle" finished-at="2022-11-18T00:33:10 IST" duration-ms="96267" status="PASS">
+    <test started-at="2022-11-25T18:07:12 IST" name="Default test" finished-at="2022-11-25T18:14:06 IST" duration-ms="413445">
+      <class name="FirefoxLoginSearchATC.LoginTest">
+        <test-method is-config="true" signature="Login()[pri:0, instance:FirefoxLoginSearchATC.LoginTest@27ce24aa]" started-at="2022-11-25T18:07:12 IST" name="Login" finished-at="2022-11-25T18:12:00 IST" duration-ms="287529" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- URLHandle -->
-        <test-method signature="searchboxhandle()[pri:0, instance:FirefoxLoginSearchATC.SelectItemMenub@3d74bf60]" started-at="2022-11-18T00:33:10 IST" name="searchboxhandle" finished-at="2022-11-18T00:33:27 IST" duration-ms="16950" status="PASS">
+        </test-method> <!-- Login -->
+        <test-method signature="flipkartLogin()[pri:0, instance:FirefoxLoginSearchATC.LoginTest@27ce24aa]" started-at="2022-11-25T18:12:00 IST" name="flipkartLogin" finished-at="2022-11-25T18:13:26 IST" duration-ms="85830" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchboxhandle -->
-        <test-method signature="completeproductlistdetails()[pri:1, instance:FirefoxLoginSearchATC.SelectItemMenub@3d74bf60]" started-at="2022-11-18T00:33:27 IST" name="completeproductlistdetails" finished-at="2022-11-18T00:33:45 IST" duration-ms="17777" status="PASS">
+        </test-method> <!-- flipkartLogin -->
+        <test-method signature="MenuList()[pri:1, instance:FirefoxLoginSearchATC.LoginTest@27ce24aa]" started-at="2022-11-25T18:13:26 IST" name="MenuList" finished-at="2022-11-25T18:13:31 IST" duration-ms="4615" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- completeproductlistdetails -->
-        <test-method is-config="true" signature="close()[pri:0, instance:FirefoxLoginSearchATC.SelectItemMenub@3d74bf60]" started-at="2022-11-18T00:33:45 IST" name="close" finished-at="2022-11-18T00:33:49 IST" duration-ms="4073" status="PASS">
+        </test-method> <!-- MenuList -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:FirefoxLoginSearchATC.LoginTest@27ce24aa]" started-at="2022-11-25T18:13:31 IST" name="afterClass" finished-at="2022-11-25T18:14:06 IST" duration-ms="35023" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- FirefoxLoginSearchATC.SelectItemMenub -->
+        </test-method> <!-- afterClass -->
+      </class> <!-- FirefoxLoginSearchATC.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

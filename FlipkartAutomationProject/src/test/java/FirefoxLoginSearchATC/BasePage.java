@@ -14,6 +14,7 @@ import org.openqa.selenium.firefox.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.yaml.snakeyaml.constructor.Constructor;
 //sele_nium imp_ortor for screen_sht 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType; 
@@ -24,8 +25,9 @@ import ru.yandex.qatools.ashot.Screenshot;
 import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class BasePage {
+public class BasePage{
 	public static WebDriver driver;
+	public String search = "//input[@name='q']";
 	// Screenshot method 
 	public static void takesnapshot(WebDriver webdriver, String filepath) throws Exception
 	{
@@ -61,7 +63,16 @@ public class BasePage {
 		ImageIO.write(scrnshot.getImage(), "jpg", new File("C:\\Users\\priya\\git\\repository\\FlipkartAutomationProject\\ScreenShot\\test1.png"));		
 		//End
 	}
-	
+	public void printText(String xpathval) throws Exception {
+		Thread.sleep(2000);
+		java.util.List<WebElement> Products = driver.findElements(By.xpath(xpathval));
+		for(WebElement product:Products) {
+			System.out.println(product.getText());
+			System.out.println("<!--Main Menu------->>");
+			takesnapshot(driver ,"C:\\Users\\priya\\git\\repository\\FlipkartAutomationProject\\ScreenShot\\test.png" );	
+			timewait(driver);
+		}
+	}
 	public static void timewait (WebDriver driver) throws Exception{
 		driver.manage().timeouts().implicitlyWait(45, TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(45, TimeUnit.SECONDS);
