@@ -17,6 +17,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.yaml.snakeyaml.constructor.Constructor;
 //sele_nium imp_ortor for screen_sht 
 import org.apache.commons.io.FileUtils;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.OutputType; 
 import org.openqa.selenium.TakesScreenshot;
 //A-shot importer for screenshot
@@ -27,7 +29,11 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BasePage{
 	public static WebDriver driver;
-	public String search = "//input[@name='q']";
+	public static String search = "//input[@name='q']";
+	public static String location = null;
+	public static String activity = null;
+	public static String otpt = null;
+	public static String excelLocation = "C:\\Users\\priya\\git\\repository\\FlipkartAutomationProject\\DataReader.xlsx";
 	// Screenshot method 
 	public static void takesnapshot(WebDriver webdriver, String filepath) throws Exception
 	{
@@ -37,6 +43,41 @@ public class BasePage{
 		FileUtils.copyFileToDirectory(SrcFile, Destn);
 	}
 	
+	public static void excelReader() throws Exception{
+		try {
+			FileInputStream fStream = new FileInputStream(new File(excelLocation)); //Enter the path to your excel here
+
+			// Create workbook instance referencing the file created above
+			XSSFWorkbook workbook = new XSSFWorkbook(fStream);
+
+			// Get your first or desired sheet from the workbook
+			XSSFSheet sheet = workbook.getSheetAt(0); // getting first sheet
+			int rowCount = sheet.getLastRowNum();
+
+			System.out.println(rowCount);
+			//			XSSFRow row = sheet.getRow(1);
+
+			//			XSSFCell cell1 = row.getCell(0);
+			//			XSSFCell cell2 = row.getCell(1);
+			//			//			XSSFCell cell3 = row.getCell(2);
+			//
+			//			location = cell1.toString();
+			//			activity = cell2.toString();
+			//			order = cell3.toString();
+			for(int i=1; i<=rowCount;i++)
+			{
+				location = sheet.getRow(i).getCell(0).getStringCellValue();
+				activity = sheet.getRow(i).getCell(1).getStringCellValue();
+				System.out.println(location +" , "+ activity);
+				
+			}
+			
+			fStream.close();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 	public static void getDriver() throws Exception
 	{
 		WebDriverManager.firefoxdriver().setup();

@@ -1,29 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-25T18:07:12 IST" name="Default suite" finished-at="2022-11-25T18:14:06 IST" duration-ms="413445">
+  <suite started-at="2022-12-16T21:59:32 IST" name="Default suite" finished-at="2022-12-16T22:06:50 IST" duration-ms="437510">
     <groups>
     </groups>
-    <test started-at="2022-11-25T18:07:12 IST" name="Default test" finished-at="2022-11-25T18:14:06 IST" duration-ms="413445">
-      <class name="FirefoxLoginSearchATC.LoginTest">
-        <test-method is-config="true" signature="Login()[pri:0, instance:FirefoxLoginSearchATC.LoginTest@27ce24aa]" started-at="2022-11-25T18:07:12 IST" name="Login" finished-at="2022-11-25T18:12:00 IST" duration-ms="287529" status="PASS">
+    <test started-at="2022-12-16T21:59:32 IST" name="Default test" finished-at="2022-12-16T22:06:50 IST" duration-ms="437510">
+      <class name="FirefoxLoginSearchATC.WriteDataExcel">
+        <test-method signature="writeData()[pri:0, instance:FirefoxLoginSearchATC.WriteDataExcel@3d51f06e]" started-at="2022-12-16T21:59:32 IST" name="writeData" finished-at="2022-12-16T22:06:40 IST" duration-ms="427670" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method signature="flipkartLogin()[pri:0, instance:FirefoxLoginSearchATC.LoginTest@27ce24aa]" started-at="2022-11-25T18:12:00 IST" name="flipkartLogin" finished-at="2022-11-25T18:13:26 IST" duration-ms="85830" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- flipkartLogin -->
-        <test-method signature="MenuList()[pri:1, instance:FirefoxLoginSearchATC.LoginTest@27ce24aa]" started-at="2022-11-25T18:13:26 IST" name="MenuList" finished-at="2022-11-25T18:13:31 IST" duration-ms="4615" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- MenuList -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:FirefoxLoginSearchATC.LoginTest@27ce24aa]" started-at="2022-11-25T18:13:31 IST" name="afterClass" finished-at="2022-11-25T18:14:06 IST" duration-ms="35023" status="PASS">
+        </test-method> <!-- writeData -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:FirefoxLoginSearchATC.WriteDataExcel@3d51f06e]" started-at="2022-12-16T22:06:40 IST" name="afterClass" finished-at="2022-12-16T22:06:50 IST" duration-ms="9669" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- FirefoxLoginSearchATC.LoginTest -->
+      </class> <!-- FirefoxLoginSearchATC.WriteDataExcel -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
