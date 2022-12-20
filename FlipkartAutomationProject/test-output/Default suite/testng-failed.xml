@@ -3,12 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="FirefoxLoginSearchATC.WriteDataExcel">
+      <class name="FirefoxLoginSearchATC.LoginTest">
         <methods>
-          <include name="writeData"/>
-          <include name="afterClass"/>
+          <include name="createDriver"/>
+          <include name="searchItemFunctionality"/>
+          <include name="tearDown"/>
+          <include name="loginFunctionality"/>
+          <include name="enterPin"/>
+          <include name="itemSelectionFunctionality"/>
         </methods>
-      </class> <!-- FirefoxLoginSearchATC.WriteDataExcel -->
+      </class> <!-- FirefoxLoginSearchATC.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

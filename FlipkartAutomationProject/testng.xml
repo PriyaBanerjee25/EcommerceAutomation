@@ -4,8 +4,10 @@
  <!--FirefoxLoginSearchATC--> 
   <test thread-count="5" name="Test1">
     <classes>
-      <class name="FirefoxLoginSearchATC.LoginTest"/>
-      <class name="FirefoxLoginSearchATC.SelectItemMenub"/>
+      <class name="BrowserOpen.GoogleChromeTestCases"/>
+       <class name="BrowserOpen.HitBrowser"/>
+       <class name="ExcelReadWrite.WriteDataExcel"/>
+       <class name="FirefoxLoginSearchATC.LoginTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

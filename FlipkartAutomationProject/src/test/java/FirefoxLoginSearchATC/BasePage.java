@@ -9,6 +9,7 @@ import org.openqa.selenium.ElementNotVisibleException;
 //import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 //import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.*;
 import org.openqa.selenium.interactions.Actions;
@@ -55,15 +56,7 @@ public class BasePage{
 			int rowCount = sheet.getLastRowNum();
 
 			System.out.println(rowCount);
-			//			XSSFRow row = sheet.getRow(1);
-
-			//			XSSFCell cell1 = row.getCell(0);
-			//			XSSFCell cell2 = row.getCell(1);
-			//			//			XSSFCell cell3 = row.getCell(2);
-			//
-			//			location = cell1.toString();
-			//			activity = cell2.toString();
-			//			order = cell3.toString();
+			
 			for(int i=1; i<=rowCount;i++)
 			{
 				location = sheet.getRow(i).getCell(0).getStringCellValue();
@@ -80,9 +73,11 @@ public class BasePage{
 	}
 	public static void getDriver() throws Exception
 	{
-		WebDriverManager.firefoxdriver().setup();
+//		WebDriverManager.firefoxdriver().setup();
 		//System.setProperty("webdriver.gecko.driver", "C:\\Users\\priya\\git\\repository\\FlipkartAutomationProject\\driver\\geckodriver.exe");
-		driver = new FirefoxDriver();
+//		driver = new FirefoxDriver();
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
 		
 	}
 	//Close popup
