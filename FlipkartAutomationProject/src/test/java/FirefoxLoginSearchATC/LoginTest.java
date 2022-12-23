@@ -40,7 +40,7 @@ public class LoginTest extends ConfigResource implements XpathResources{
         }else if(getBrowserName().equals("firefox")){
             WebDriverManager.firefoxdriver().setup();
             driver=new FirefoxDriver();
-            System.out.println("Browser hit 3");
+            System.out.println("LoginTest");
         }
         driver.manage().window().maximize();
     }
@@ -88,6 +88,7 @@ public class LoginTest extends ConfigResource implements XpathResources{
 
     @Test(priority = 2)
     public void itemSelectionFunctionality(){
+    	System.out.println("itemSelectionFunctionality");
         WebElement shirt = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(oneTshirt)));
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         shirt.click();
@@ -114,7 +115,7 @@ public class LoginTest extends ConfigResource implements XpathResources{
 
     @AfterClass
     public static void tearDown() {
-
+    	System.out.println("Quit");
         driver.quit();
     }
 }
