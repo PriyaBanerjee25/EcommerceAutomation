@@ -73,11 +73,11 @@ public class BasePage{
 	}
 	public static void getDriver() throws Exception
 	{
-//		WebDriverManager.firefoxdriver().setup();
+		WebDriverManager.firefoxdriver().setup();
 		//System.setProperty("webdriver.gecko.driver", "C:\\Users\\priya\\git\\repository\\FlipkartAutomationProject\\driver\\geckodriver.exe");
-//		driver = new FirefoxDriver();
-		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
+		driver = new FirefoxDriver();
+//		WebDriverManager.chromedriver().setup();
+//		driver = new ChromeDriver();
 		
 	}
 	//Close popup
