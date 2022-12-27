@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="BrowserOpen.GoogleChromeTestCases">
+      <class name="FirefoxLoginSearchATC.LoginOTPRequest">
         <methods>
-          <include name="f"/>
-          <include name="LaunchappChrome"/>
-          <include name="afterClass"/>
+          <include name="itemSelectionFunctionality"/>
+          <include name="tearDown"/>
+          <include name="createDriver"/>
         </methods>
-      </class> <!-- BrowserOpen.GoogleChromeTestCases -->
+      </class> <!-- FirefoxLoginSearchATC.LoginOTPRequest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
