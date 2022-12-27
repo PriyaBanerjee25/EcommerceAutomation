@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite" parallel="tests">
+ <!--FirefoxLoginSearchATC--> 
   <test thread-count="5" name="Test1">
     <classes>
       <class name="BrowserOpen.GoogleChromeTestCases"/>
-    </classes>
-  </test> <!-- Test -->
-  <test thread-count="5" name="Test2">
-    <classes>
-      <class name="BrowserOpen.HitBrowser"/>
+       <class name="BrowserOpen.HitBrowser"/>
+       <class name="ExcelReadWrite.WriteDataExcel"/>
+       <class name="FirefoxLoginSearchATC.LoginTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
